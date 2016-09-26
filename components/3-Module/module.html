@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- ng-app is the root directive which would instantiate our app -->
+<html ng-app="MyApp">
+  <head>
+    <title>Module Example</title>
+		<link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../assets/css/bootstrap-callouts.css" rel="stylesheet">
+	</head>
+  <body>
+		<div ng-include="'../../nav.html'"></div>
+		<div class="container component-container">
+			<h2 class="text-muted text-center component-title">Module Playground</h2>
+
+			<!-- ng-bind directive is same as {{ }} -->
+			<div ng-controller="MyAppController" class="bs-callout bs-callout-grey">
+				<h4><code>ng-controller</code></h4>
+					<input type="text" ng-model="name">
+					{{ name }}
+				</p>
+			</div>
+
+			<!-- ng-controller with ng-repeat -->
+			<div ng-controller="MyAppController" class="bs-callout bs-callout-grey">
+				<h4><code>ng-controller</code> with <code>ng-repeat</code></h4>
+				<div ng-repeat="book in books">
+					<p>{{ book.name + ' - ' + book.author }}</p>
+				</div>
+			</div>
+
+			<!-- ng-click: directive which calls a function on click event -->
+			<div ng-controller="MyAppController" class="bs-callout bs-callout-grey">
+				<h4><code>ng-click</code></h4>
+			  Your name:
+			    <input type="text" ng-model="username">
+			    <button ng-click="sayHello()" class="btn btn-primary">Greet</button><br/></br/>
+					<h4 class="text-muted">{{ greeting }}</h4>
+			</div>
+
+			<!-- ng-controller hierarchies -->
+			<div ng-controller="MyAppController" class="bs-callout bs-callout-grey">
+				<h4><code>ng-controller</code> - hierarchies</h4>
+			  <p>Parent Controller: {{ name }}</p>
+				<div ng-controller="ChildController">
+				  <p>Child Controller: {{ name }}</p>
+				</div>
+			</div>
+
+
+    </div>
+		<!-- Scripts -->
+		<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../../node_modules/angular/angular.min.js"></script>
+
+		<!-- Angular Scripts -->
+		<script src="./module.js"></script>
+  </body>
+</html>

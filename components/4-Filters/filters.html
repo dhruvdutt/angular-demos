@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- ng-app is the root directive which would instantiate our app -->
+<html ng-app="MyApp">
+  <head>
+    <title>Filters Example</title>
+		<link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../assets/css/bootstrap-callouts.css" rel="stylesheet">
+	</head>
+  <body>
+		<div ng-include="'../../nav.html'"></div>
+		<div class="container component-container">
+			<h2 class="text-muted text-center component-title">Filters Playground</h2>
+
+			<!-- uppercase filter -->
+			<div ng-controller="MyFilterController" class="bs-callout bs-callout-grey">
+				<h4><code>uppercase</code></h4>
+				<p>Normal: {{ name }} </p>
+				<p>Using uppercase filter: {{ name | uppercase }} </p>
+			</div>
+
+			<!-- currency filter -->
+			<div ng-controller="MyFilterController" class="bs-callout bs-callout-grey">
+				<h4><code>currency</code></h4>
+				<p>Normal: {{ price }} </p>
+				<p>Using currency filter: {{ price | currency }} </p>
+			</div>
+
+			<!-- limitTo filter -->
+			<div ng-controller="MyFilterController" class="bs-callout bs-callout-grey">
+				<h4><code>limitTo</code></h4>
+				<p>Name: {{ name }} </p>
+				<p>Name: {{ name | limitTo: 1 }} </p>
+			</div>
+
+			<!-- date filter -->
+			<div ng-controller="MyFilterController" class="bs-callout bs-callout-grey">
+				<h4><code>date</code></h4>
+				<p>Date: {{ time | date:"medium" }} </p>
+				<p>Date: {{ time | date:"MM/dd/yyyy 'at' h:mma" }} </p>
+				<p><a href="https://docs.angularjs.org/api/ng/filter/date" target="_blank">More date formats</a></p>
+			</div>
+
+			<!-- orderBy filter -->
+			<div ng-controller="MyFilterController" class="bs-callout bs-callout-grey">
+				<h4><code>orderBy</code></h4>
+				<p ng-repeat="name in names | orderBy: 'name'">
+					{{ name.name }} - {{ name.city }}
+				</p>
+			</div>
+
+			<!-- orderBy filter reverse -->
+			<div ng-controller="MyFilterController" class="bs-callout bs-callout-grey">
+				<h4><code>orderBy</code> reverse</h4>
+				<p ng-repeat="name in names | orderBy: '-name'">
+					{{ name.name }} - {{ name.city }}
+				</p>
+			</div>
+
+			<!-- filter filter -->
+			<div ng-controller="MyFilterController" class="bs-callout bs-callout-grey">
+				<h4><code>filter</code> filter</h4>
+				<input type="text" ng-model="userInput"/> <br/></br/>
+				<p ng-repeat="name in names | filter: userInput">
+					{{ name.name }} - {{ name.city }}
+				</p>
+			</div>
+
+			<!-- custom filter -->
+			<div ng-controller="MyFilterController" class="bs-callout bs-callout-grey">
+				<h4><code>custom filter</code></h4>
+				<p>Using custom filter: {{ name | capitalCase }} </p>
+			</div>
+
+    </div>
+		<!-- Scripts -->
+		<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../../node_modules/angular/angular.min.js"></script>
+
+		<!-- Angular Scripts -->
+		<script src="./filters.js"></script>
+  </body>
+</html>

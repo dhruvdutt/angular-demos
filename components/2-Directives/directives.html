@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- ng-app is the root directive which would instantiate our app -->
+<html ng-app>
+  <head>
+    <title>Directives Example</title>
+		<link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../assets/css/bootstrap-callouts.css" rel="stylesheet">
+	</head>
+  <body>
+		<div ng-include="'../../nav.html'"></div>
+		<div class="container component-container">
+			<h2 class="text-muted text-center component-title">Directives Playground</h2>
+
+			<!-- ng-bind directive is same as {{ }} -->
+			<div class="bs-callout bs-callout-grey">
+				<h4><code>ng-bind</code></h4>
+				<p ng-init="quantity=3; cost=5">
+					Quantitiy: <span ng-bind='quantity * cost'></span> <br/>
+					Total: {{ quantity * cost }}
+				</p>
+			</div>
+
+			<!-- ng-model maintains same instance of the data binded 2-way -->
+			<div class="bs-callout bs-callout-grey">
+				<h4><code>ng-model</code></h4>
+				<p ng-init="firstName='John'">
+					Name: <input type="text" ng-model="firstName">
+				</p>
+				<p>You wrote: {{ firstName }}</p>
+			</div>
+
+			<!-- Iterating over an array through conventional way -->
+			<div class="bs-callout bs-callout-grey">
+				<h4>Array iteration: Conventional way</h4>
+				<div ng-init="books=[{name:'Book1'},{name:'Book2'}]">
+					<p> {{ books[0].name }} </p>
+					<p>	{{ books[1].name }} </p>
+				</div>
+			</div>
+
+			<!-- Iterating over an array via inbuilt directive ng-repeat -->
+			<div class="bs-callout bs-callout-grey">
+				<h4>Array iteration using <code>ng-repeat</code></h4>
+				<div ng-repeat='book in books'>
+					<p>{{ book.name }}</p>
+				</div>
+			</div>
+
+			<!-- ng-show -->
+			<div class="bs-callout bs-callout-grey">
+				<h4><code>ng-show</code></h4>
+				<div ng-init="available = true">
+					<p ng-show="available">Item 1</p>
+				</div>
+			</div>
+
+			<!-- ng-hide -->
+			<div class="bs-callout bs-callout-grey">
+				<h4><code>ng-show</code></h4>
+				<div ng-init="outOfStock = true">
+					<p ng-hide="outOfStock">Item 1</p>
+				</div>
+			</div>
+
+    </div>
+		<!-- Scripts -->
+		<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../../node_modules/angular/angular.min.js"></script>
+  </body>
+</html>

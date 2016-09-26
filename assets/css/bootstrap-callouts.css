@@ -1,0 +1,86 @@
+.vertical-center{
+	padding-top: 23rem;
+}
+.component-container{
+	padding-top: 6rem;
+}
+.component-title{
+	padding-left: 3rem;
+}
+/*callouts*/
+.bs-callout {
+  margin: 3rem;
+  padding: 3rem;
+  border-left: 5px solid #eee;
+}
+.bs-callout h4 {
+  margin-top: 0;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code {
+	background-color: #eeeeee;
+}
+.bs-callout .highlight {
+  background-color: #fff;
+}
+
+/* Themes for different contexts */
+.bs-callout-red {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4;
+}
+.bs-callout-yellow {
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+}
+.bs-callout-blue {
+  background-color: #f0f7fd;
+  border-color: #1e88e5;
+}
+.bs-callout-purple {
+  background-color: #f3e5f5;
+  border-color: #ab47bc;
+}
+.bs-callout-teal {
+  background-color: #e0f2f1;
+  border-color: #26a69a;
+}
+.bs-callout-green {
+  background-color: #e8f5e9;
+  border-color: #66bb6a;
+}
+.bs-callout-brown {
+  background-color: #efebe9;
+  border-color: #8d6e63;
+}
+.bs-callout-grey {
+  background-color: #f5f5f5;
+  border-color: #bdbdbd;
+}
+/*h4*/
+.bs-callout-red h4 {
+color: #B94A48;
+}
+.bs-callout-yellow h4 {
+color: #C09853;
+}
+.bs-callout-blue h4 {
+color: #3A87AD;
+}
+.bs-callout-purple h4 {
+color: #ab47bc;
+}
+.bs-callout-teal h4 {
+color: #26a69a;
+}
+.bs-callout-green h4 {
+color: #66bb6a;
+}
+.bs-callout-brown h4 {
+color: #8d6e63;
+}
+.bs-callout-grey h4 {
+color: #757575;
+}

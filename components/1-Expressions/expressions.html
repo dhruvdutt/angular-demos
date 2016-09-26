@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- ng-app is the root directive which would instantiate our app -->
+<html ng-app>
+  <head>
+    <title> Expressions Example </title>
+		<link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../assets/css/bootstrap-callouts.css" rel="stylesheet">
+	</head>
+  <body>
+		<div ng-include="'../../nav.html'"></div>
+      <div class="container component-container">
+				<h2 class="text-muted text-center component-title">Expressions Playground</h2>
+
+				<!-- Simple Expressions Example -->
+				<div class="bs-callout bs-callout-grey">
+					<h4>Simple expressions</h4>
+					<p> {{ 3 + 5 }} </p>
+					<!-- <p> {{ '3 + 5' }} </p> -->
+				</div>
+
+				<!-- Used to evaluate expressions through some calculations -->
+				<div class="bs-callout bs-callout-grey">
+					<h4>Expressions including calculations</h4>
+					<p ng-init="quantity=3; cost=5">
+						Total: {{ quantity * cost }}
+					</p>
+				</div>
+
+				<!-- Also used to concatenate strings -->
+				<div class="bs-callout bs-callout-grey">
+					<h4>Concatenating strings</h4>
+					<p ng-init="firstName='John'; lastName='Doe'">
+						{{ firstName + lastName }}
+						<!-- {{ firstName + ' ' + lastName }} -->
+					</p>
+				</div>
+
+    </div>
+
+		<!-- Scripts -->
+		<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../../node_modules/angular/angular.min.js"></script>
+  </body>
+</html>
