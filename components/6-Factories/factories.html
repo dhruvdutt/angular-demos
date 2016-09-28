@@ -2,26 +2,26 @@
 <!-- ng-app is the root directive which would instantiate our app -->
 <html ng-app="MyApp">
   <head>
-    <title>Services Example</title>
+    <title>Factories Example</title>
 		<link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="../../assets/css/styles.css" rel="stylesheet">
 	</head>
   <body>
 		<div ng-include="'../../nav.html'"></div>
 		<div class="container component-container">
-			<h2 class="text-muted text-center component-title">Services Playground</h2>
+			<h2 class="text-muted text-center component-title">Factories Playground</h2>
 
-			<!-- service example -->
-			<div ng-controller="MyServiceController" class="bs-callout bs-callout-grey">
-				<h4><code>service</code> Controller 1</h4>
+			<!-- factory example -->
+			<div ng-controller="MyFactoryController" class="bs-callout bs-callout-grey">
+				<h4><code>factory</code> Controller 1</h4>
 				<input type="text" ng-model="inputValue"/>
 				<button class="btn btn-primary" ng-click="setValue(inputValue)">Set Value</button>
 				<button class="btn btn-primary" ng-click="getValue()">Get Value</button>
 				<p>{{ value }}</p>
 			</div>
 
-			<div ng-controller="MyServiceController2" class="bs-callout bs-callout-grey">
-				<h4><code>service</code> Controller 2</h4>
+			<div ng-controller="MyFactoryController2" class="bs-callout bs-callout-grey">
+				<h4><code>factory</code> Controller 2</h4>
 				<input type="text" ng-model="inputValue2"/>
 				<button class="btn btn-primary" ng-click="setValue(inputValue2)">Set Value</button>
 				<button class="btn btn-primary" ng-click="getValue()">Get Value</button>
@@ -35,6 +35,6 @@
 		<script src="../../node_modules/angular/angular.min.js"></script>
 
 		<!-- Angular Scripts -->
-		<script src="./services.js"></script>
+		<script src="./factories.js"></script>
   </body>
 </html>

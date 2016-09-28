@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- ng-app is the root directive which would instantiate our app -->
+<html ng-app="MyApp">
+  <head>
+    <title>HTTP Service Example</title>
+		<link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../assets/css/styles.css" rel="stylesheet">
+	</head>
+  <body>
+		<div ng-include="'../../../nav.html'"></div>
+		<div class="container component-container">
+			<h2 class="text-muted text-center component-title">HTTP Service</h2>
+
+			<!-- service example -->
+			<div ng-controller="MyController" class="bs-callout bs-callout-grey">
+				<h4><code>$http</code> service</h4>
+				<button class="btn btn-primary" ng-click="getData()">Get Data</button><br/></br/>
+				<p ng-repeat="movie in movieNames">
+					{{ movie.title }}
+				</p>
+			</div>
+
+    </div>
+		<!-- Scripts -->
+		<script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../../../node_modules/angular/angular.min.js"></script>
+
+		<!-- Angular Scripts -->
+		<script src="./http.js"></script>
+  </body>
+</html>

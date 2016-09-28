@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- ng-app is the root directive which would instantiate our app -->
+<html ng-app="MyApp">
+  <head>
+    <title>Services Example</title>
+		<link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../assets/css/styles.css" rel="stylesheet">
+	</head>
+  <body>
+		<div ng-include="'../../../nav.html'"></div>
+		<div class="container component-container">
+			<h2 class="text-muted text-center component-title">Math Service</h2>
+
+			<!-- service example -->
+			<div ng-controller="MathServiceController" class="bs-callout bs-callout-grey">
+				<h4><code>service</code></h4>
+				<input type="text" ng-model="inputValue"/>
+				<button class="btn btn-primary" ng-click="squareNumber(inputValue)">Square</button>
+				<p>{{ answer }}</p>
+			</div>
+
+    </div>
+		<!-- Scripts -->
+		<script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../../../node_modules/angular/angular.min.js"></script>
+
+		<!-- Angular Scripts -->
+		<script src="./math-ctrl.js"></script>
+		<script src="./math-service.js"></script>
+  </body>
+</html>

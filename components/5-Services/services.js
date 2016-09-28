@@ -1,38 +1,42 @@
 var app = angular.module('MyApp', []);
 
-app.controller('MyServiceController', function($scope){
+// Defining Service
+app.service("MyService", function() {
 
-	$scope.name = "root";
+	var value;
 
-	$scope.price = "50";
+	this.getValue = function(){
+		return value;
+	}
 
-	$scope.names = [
-		{
-			name: 'Ash',
-			city: 'Pallet Town'
-		},
-		{
-			name: 'Emma',
-			city: 'Paris'
-		},
-		{
-			name: 'John',
-			city: 'Abu Dhabi'
-		},
-		{
-			name: 'Emelia',
-			city: 'Venice'
-		},
-		{
-			name: 'William',
-			city: 'Sydney'
-		}
-	];
+	this.setValue = function(v){
+		value = v;
+	}
 
 });
 
-app.filter("capitalCase", function() {
-	return function (input) {
-		return input.charAt(0).toUpperCase() + input.slice(1);
-	}
+// Controller 1: Injecting MyService
+app.controller('MyServiceController', function($scope, MyService){
+
+	$scope.setValue = function(inputValue){
+		MyService.setValue(inputValue);
+	};
+
+	$scope.getValue = function(){
+		$scope.value = MyService.getValue();
+	};
+
+});
+
+// Controller 2: Injecting MyService
+app.controller('MyServiceController2', function($scope, MyService){
+
+	$scope.setValue = function(inputValue){
+		MyService.setValue(inputValue);
+	};
+
+	$scope.getValue = function(){
+		$scope.value = MyService.getValue();
+	};
+
 });

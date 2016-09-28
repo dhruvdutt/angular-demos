@@ -4,7 +4,7 @@
   <head>
     <title>Directives Example</title>
 		<link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link href="../../assets/css/bootstrap-callouts.css" rel="stylesheet">
+		<link href="../../assets/css/styles.css" rel="stylesheet">
 	</head>
   <body>
 		<div ng-include="'../../nav.html'"></div>
@@ -54,10 +54,10 @@
 				</div>
 			</div>
 
-			<!-- ng-hide -->
+			<!-- ng-hide: inverse of ng-show -->
 			<div class="bs-callout bs-callout-grey">
-				<h4><code>ng-show</code></h4>
-				<div ng-init="outOfStock = true">
+				<h4><code>ng-hide</code></h4>
+				<div ng-init="outOfStock = false">
 					<p ng-hide="outOfStock">Item 1</p>
 				</div>
 			</div>

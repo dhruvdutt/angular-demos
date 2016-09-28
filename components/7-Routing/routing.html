@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- ng-app is the root directive which would instantiate our app -->
+<html ng-app="MyApp">
+  <head>
+    <title>Routing Example</title>
+		<link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../assets/css/styles.css" rel="stylesheet">
+	</head>
+  <body>
+		<div ng-include="'../../nav.html'"></div>
+		<div class="container component-container">
+			<h2 class="text-muted text-center component-title">Routing Playground</h2>
+
+			<a ui-sref="home">Home</a> |
+	    <a ui-sref="about">About</a>
+
+			<!-- Views would be injected here -->
+	    <ui-view></ui-view>
+
+    </div>
+		<!-- Scripts -->
+		<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../../node_modules/angular/angular.min.js"></script>
+		<script src="../../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+		<!-- Angular Scripts -->
+		<script src="./routing.js"></script>
+  </body>
+</html>
