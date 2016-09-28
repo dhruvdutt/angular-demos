@@ -8,4 +8,3 @@ Component demos for the "Hands on with Angular.js workshop" conducted by [me](ht
 2. Run `cd angular-workshop-frontend`
 3. Run `npm install -g live-server`
 4. Run `live-server`
->>>>>>> 189d94672290944de9c7a6dc504ad23cd5161be1
