@@ -1,13 +1,31 @@
-## Angular.js Components Demo
+## Angular.js Demo
 
-Component demos for the "Hands on with Angular.js workshop" conducted by [me](https://github.com/dhruvdutt) & [@dhwanilvyas](https://github.com/dhwanilvyas) at Changa University.
+Component demos for the "Hands on with Angular.js workshop" conducted by [dhruvdutt](https://github.com/dhruvdutt) & [@dhwanilvyas](https://github.com/dhwanilvyas) at Changa University.
 
-### Installation
+### API Installation
 
-1. Clone the repo `git clone https://github.com/dhruvdutt/Angular-Demos`
+1. Clone the repo `git clone https://github.com/Pratik8575/bookapi`
+2. Run `cd bookapi`
+3. Run `node app.js`
+
+### App Installation
+
+1. Clone the repo `git clone https://github.com/dhwanilvyas/angular-workshop-frontend`
 2. Run `cd angular-workshop-frontend`
 3. Run `npm install -g live-server`
 4. Run `live-server`
+
+
+----------------------------------------------------------------------------------------
+
+
+### Angular Components Demos
+
+1. Clone the repo `git clone https://github.com/dhruvdutt/Angular-Demos`
+2. Run `cd Angular-Demos`
+3. Run `npm install -g live-server`
+4. Run `live-server`
+
 
 ----------------------------------------------------------------------------------------
 
@@ -27,6 +45,7 @@ Component demos for the "Hands on with Angular.js workshop" conducted by [me](ht
 
 
 ----------------------------------------------------------------------------------------
+
 
 ## Online Presentation Link
 [Google Slides Link](https://docs.google.com/presentation/d/1PtqjhgVtIqPSWzk5MbFpZmjKsZWBSiyljp-m_JWfF-M/edit?usp=sharing)
