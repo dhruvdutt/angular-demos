@@ -26,7 +26,7 @@ Component demos for the "Hands on with Angular.js workshop" conducted by [me](ht
 *Protip*: You can check existing origins via `git remote -v`.
 
 
----
+----------------------------------------------------------------------------------------
 
 ## Online Presentation Link
 [Google Slides Link](https://docs.google.com/presentation/d/1PtqjhgVtIqPSWzk5MbFpZmjKsZWBSiyljp-m_JWfF-M/edit?usp=sharing)
