@@ -12,7 +12,7 @@ Component demos for the "Hands on with Angular.js workshop" conducted by [me](ht
 ----------------------------------------------------------------------------------------
 
 
-## Git Commands discussed in the MEAN workshop taken at Changa University.
+## Git Commands discussed in the workshop.
 
 1. `git init` Navigate to your project folder and initialize the project.
 2. Work on your project, make files, write code.
@@ -24,3 +24,9 @@ Component demos for the "Hands on with Angular.js workshop" conducted by [me](ht
 **Note**: While using `git clone [online repository path]`, step 3 can be skipped because `git remote origin` is automatically.
 
 *Protip*: You can check existing origins via `git remote -v`.
+
+
+---
+
+## Online Presentation Link
+[Google Slides Link](https://docs.google.com/presentation/d/1PtqjhgVtIqPSWzk5MbFpZmjKsZWBSiyljp-m_JWfF-M/edit?usp=sharing)
