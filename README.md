@@ -6,6 +6,7 @@ Component demos for the "Hands on with Angular.js workshop" conducted by [dhruvd
 ## Online Presentation Link
 [Google Slides Link](https://docs.google.com/presentation/d/1PtqjhgVtIqPSWzk5MbFpZmjKsZWBSiyljp-m_JWfF-M/edit?usp=sharing)
 
+----------------------------------------------------------------------------------------
 
 ### API Installation
 
