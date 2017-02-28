@@ -2,6 +2,11 @@
 
 Component demos for the "Hands on with Angular.js workshop" conducted by [dhruvdutt](https://github.com/dhruvdutt) & [@dhwanilvyas](https://github.com/dhwanilvyas) at Changa University.
 
+
+## Online Presentation Link
+[Google Slides Link](https://docs.google.com/presentation/d/1PtqjhgVtIqPSWzk5MbFpZmjKsZWBSiyljp-m_JWfF-M/edit?usp=sharing)
+
+
 ### API Installation
 
 1. Clone the repo `git clone https://github.com/Pratik8575/bookapi`
@@ -46,6 +51,3 @@ Component demos for the "Hands on with Angular.js workshop" conducted by [dhruvd
 
 ----------------------------------------------------------------------------------------
 
-
-## Online Presentation Link
-[Google Slides Link](https://docs.google.com/presentation/d/1PtqjhgVtIqPSWzk5MbFpZmjKsZWBSiyljp-m_JWfF-M/edit?usp=sharing)
